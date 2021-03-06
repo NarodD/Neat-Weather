@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Parcel Sandbox</title>
+		<link rel="stylesheet" 
+					href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+					integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+					crossorigin="anonymous">
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="weather.css" />
+	<script src="https://kit.fontawesome.com/d555a350ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="app"></div>
+	<h1 class="welcome">Welcome to Neat Weather</h1>
+	<form action="search">
+			<input type="text" id="city-form" placeholder="Search a location, please..."/>
+			<button class="find"><i class="fas fa-search"></i></button>
+	</form>
+	<section class="current">
+			<h1 id="city"></h1>
+			<h2 class="time"><span id="week-day">a</span> <span id="hour">b</span>:<span id="minute">c</span><button id="refresh"> <i class="fas fa-redo"></i> </button> </h2>
+			<h2 id="weather-type">d</h2>
+			<h1 class="temp"><span id="temp-in-unit"></span>°<span id="temp-unit">C</span></h1>
+			<h2 class="details">Humidity: <span id="humidity"></span>%<br>Wind: <span id="wind"></span>km/h</h2>
+	</section>
+	<div class="row">
+		<div class="col-6"></div>
+		<div class="col-1"><button class="day">Sun<br><i class="fas fa-cloud-sun"></i><br><span class="following">23°/18°</span></button></div>
+		<div class="col-1"><button class="day">Mon<br><i class="fas fa-cloud-sun"></i><br><span class="following">23°/18°</span></button></div>
+		<div class="col-1"><button class="day">Tue<br><i class="fas fa-cloud-sun"></i><br><span class="following">23°/18°</span></button></div>
+		<div class="col-1"><button class="day">Wed<br><i class="fas fa-cloud-sun"></i><br><span class="following">23°/18°</span></button></div>
+		<div class="col-1"><button class="day">Thu<br><i class="fas fa-cloud-sun"></i><br><span class="following">23°/18°</span></button></div>
+	</div>
+</div>
+<script src="weather.js"></script>
+</body>
+</html>
