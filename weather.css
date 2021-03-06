@@ -30,6 +30,11 @@ html {
   input:focus {
     outline: none;
   }
+  #open-source {
+    color: #424242;
+    position: fixed;
+    right: 25vw;
+  }
   .find {
     color: #757575;
     background-color: transparent;
